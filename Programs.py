@@ -759,6 +759,23 @@ for j in na:
         print(j)
 
 
+'''
+num = eval(input('enter any number: '))
+counter = 0
+if num == 0:
+    counter = 1
+elif num < 10:
+    counter = 1
+elif num < 100:
+    counter = 2
+elif num < 1000:
+    counter = 3
+else:
+    while num > 0:
+        num = num // 10
+        counter += 1
+print(counter)
+'''
 
 
 
