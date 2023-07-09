@@ -778,6 +778,21 @@ print(counter)
 '''
 
 
+'''
+a = eval(input('enter any character: ').lower())
+vowel=['a','e','i','o','u']
+if type(a) == str:
+    if len(a) == 1: # enter value in ''
+        if a in vowel:
+            print('{} is vowel'.format(a))
+        else:
+            print('{} is consonant'.format(a))
+    else:
+        print('one character')
+else:
+    print('pls enter only string values')
+'''
+
 
 
 
