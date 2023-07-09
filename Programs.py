@@ -162,6 +162,62 @@ else:
 '''
 
                 # Python programs
+# count any number
+'''
+n = 23245
+count = 0
+while(n>0):
+    count = count+1
+    n = n/10
+    print(count)
+'''
+# Dates
+'''
+import data,timedelta
+
+today = date.today()
+dates = [(today - timedelta(days=i)).strftime("%d-%m-%y")
+         for i in range(10)]
+print(dates)
+'''
+#Palindrom
+"""
+st=['mom','python','malayalam','madam']
+ls=[]
+for i in st:
+    if i==i[-1::-1]:
+        ls.append(i)
+mf=[]
+for j in ls:
+    ls1=[]
+    for k in j :
+        if k in "aeiou":
+            ls1.append(k)
+    s=''.join(ls1)
+    mf.append(s)
+print(mf)
+
+st=['mom','python','malayalam','madam']
+luc=[]
+for i in st:
+    b=''
+    if i==i[-1::-1]:
+        for c in i:
+            if c in [a for a in 'aeiou']:
+                b = b+c
+        luc.append(b)
+print(luc)
+
+
+st='python narayana tech house'
+v='aeiou'
+d={}.fromkeys(v,0)
+for i in st:
+    if i in d:
+        d[i] = d[i]+1
+print(d)
+"""
+
 #1.Write a python program to fetch all even numbers           
 '''
 ls=[10,9,20,15,14,13,18,20,45,40,81,56]
